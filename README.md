@@ -13,7 +13,7 @@ Pré-requisitos
 Certifique-se de ter as seguintes ferramentas instaladas em sua máquina:
 
 - Python (versão 3.x)
-- Flask (instalado via pip)
+- Flask (instalado via pip) `pip install flask`
 
 Clone o repositório para sua máquina local:
 ```bash
@@ -32,12 +32,12 @@ O servidor Flask será executado na porta 7777 e estará pronto para receber sol
 # Endpoints da API
 A API possui os seguintes endpoints disponíveis:
 
-- `GET` /: Retorna todas as postagens.
-- `GET` /postagens: Retorna todas as postagens.
-- `GET` /postagens/<int:indice>: Retorna uma postagem específica com base no índice fornecido.
-- `POST` /postagem: Cria uma nova postagem. Envie os dados da postagem no formato JSON no corpo da solicitação.
-- `PUT` /postagem/<int:indice>: Atualiza uma postagem existente com base no índice fornecido. Envie os dados da postagem atualizada no formato JSON no corpo da solicitação.
-- `DELETE` /postagem/<int:indice>: Exclui uma postagem específica com base no índice fornecido.
+- `GET` / : Retorna todas as postagens.
+- `GET` /postagens : Retorna todas as postagens.
+- `GET` /postagens/<int:indice> : Retorna uma postagem específica com base no índice fornecido.
+- `POST` /postagem : Cria uma nova postagem. Envie os dados da postagem no formato JSON no corpo da solicitação.
+- `PUT` /postagem/<int:indice> : Atualiza uma postagem existente com base no índice fornecido. Envie os dados da postagem atualizada no formato JSON no corpo da solicitação.
+- `DELETE` /postagem/<int:indice> : Exclui uma postagem específica com base no índice fornecido.
 
 # Considerações Finais
 
