@@ -25,8 +25,8 @@ def get_post():
     return jsonify(post)
 
 @app.route('/post/<int:indice>', methods=['GET'])
-def get_post_by_indice(indice):
-    return jsonify(post[indice])
+def get_post_by_indice(index):
+    return jsonify(post[index])
 
 @app.route('/post', methods=['POST'])
 def create_post():
@@ -35,17 +35,17 @@ def create_post():
     return jsonify(data, 200)
 
 @app.route('/post/<int:indice>', methods=['PUT'])
-def change_post(indice):
+def update_post(index):
     post_alter = request.get_json()
-    post[indice].update(post_alter)
-    return jsonify(post[indice], 200)
+    post[index].update(post_alter)
+    return jsonify(post[index], 200)
 
 @app.route('/post/<int:indice>', methods=['DELETE'])
-def delete_post(indice):
+def delete_post(index):
     try:
-        if post[indice] is not None:
-            del post[indice]
-            return jsonify(f'Post deleted successfully. {post[indice]}', 200)
+        if post[index] is not None:
+            del post[index]
+            return jsonify(f'Post deleted successfully. {post[index]}', 200)
     except:
         return jsonify('Could not find post for deletion', 404)
 
