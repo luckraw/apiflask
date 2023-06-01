@@ -9,7 +9,7 @@ O projeto utiliza as seguintes tecnologias:
 # Como Usar
 Siga as instruções abaixo para configurar e executar o projeto em sua máquina local.
 
-Pré-requisitos
+- Pré-requisitos
 
 Certifique-se de ter as seguintes ferramentas instaladas em sua máquina:
 
