@@ -10,6 +10,7 @@ O projeto utiliza as seguintes tecnologias:
 Siga as instruções abaixo para configurar e executar o projeto em sua máquina local.
 
 Pré-requisitos
+
 Certifique-se de ter as seguintes ferramentas instaladas em sua máquina:
 
 - Python (versão 3.x)
